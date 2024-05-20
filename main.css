@@ -1,0 +1,205 @@
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links ul {
+    display: flex;
+}
+
+.social-links ul li {
+    margin: 10px 10px;
+    list-style: none;
+}
+
+.social-links ul li img {
+    max-width: 35px;
+    filter: invert(50%);
+}
+
+.social-links ul li img:hover {
+    max-width: 35px;
+    filter: invert(90%);
+}
+
+.social-links form button {
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #556b2f;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.big-menu {
+    background-color: #000;
+    color: #fff;
+    padding: 32px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 110%;
+    list-style-type: none;
+    background-color: #0f0f0f;
+}
+
+.menu > li {
+    position: relative;
+    float: left;
+    padding: 16px;
+    list-style: none;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+}
+
+.menu li:hover {
+    border-color: #fff;
+}
+
+.sub-menu a {
+    color: #fff;
+}
+
+main {
+    width: 98%;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+article .card-body ul {
+    list-style-type: square;
+}
+
+aside img { 
+    height: 300px;
+}
+
+.col-12 {
+    margin-bottom: 40px;
+}
+
+.card-img-overlay {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card-img-overlay a {
+    color: #fff;
+}
+
+.our-fleet img {
+    height: 134px;
+}
+
+.carousel img {
+    width: 98%;
+    height: 300px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+.dropdown-menu li {
+    list-style-type: none;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+    .social-links {
+        display: block;
+        align-items: center;
+    }
+    
+    .social-links ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .social-links ul li {
+        list-style: none;
+    }
+    
+    .social-links form button {
+        border-radius: 5px;
+        background-color: #556b2f;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    header form {
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+
+    .big-menu {
+        text-align: center;
+    }
+    
+    .sub-menu {
+        text-align: left;
+        left: -70%;
+    }
+
+    main {
+        width: 98%;
+    }
+    
+    .conteudo {
+        display: block;
+    }
+    
+    img { 
+        width: 98%;
+    }
+    
+    
+    .card-img-overlay a {
+        color: #fff;
+    }
+    
+    .carousel img {
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    img {
+        width: 100%;
+    }
+
+    .our-fleet img {
+        height: 132px;
+    }
+}
